@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Toy Robot Simulator</h1>
+        <div class="row">
+            <button class="example" data-example="first">Example A</button>
+            <button class="example" data-example="second">Example B</button>
+            <button class="example" data-example="third">Example C</button>
+            <a href="test/" class="button">Run Tests</a>
+        </div>
+        <div class="row row-fields">
+            <div class="one-half column">
+                <textarea class="commands" id="commands" placeholder="Enter those commands..."></textarea>
+            </div>
+            <div class="one-half column">
+                <pre class="commands" id="output"></pre>
+            </div>
+        </div>
+        <div class="row">
+            <button class="button-primary" id="process">Process commands!</button>
+        </div>
+    </div>
+</body>
+</html>
